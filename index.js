@@ -122,7 +122,7 @@ app.put("/usuarios/:id", (req, res) => {
           return console.error("Erro ao executar a qry de UPDATE", err);
         } else {
           res.setHeader("id", id);
-          res.status(202).json({ "identificador": id });
+          res.status(202).json({ "id": id });
           console.log(result);
         }
       }
